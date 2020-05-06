@@ -1,0 +1,17 @@
+
+public class SingletonCounter {
+	private static SingletonCounter instance = new SingletonCounter();
+	private  int count = 0;
+
+	private SingletonCounter() {}
+	
+	public static SingletonCounter getInstance() 
+	{
+		return instance;
+	}
+	
+	public int getCounter() 
+	{
+		return ++count ;
+	}
+}
