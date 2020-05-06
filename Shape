@@ -1,0 +1,15 @@
+
+public abstract class Shape implements  ShapeComponent {
+
+	private SingletonCounter count;
+	private int size;
+	
+	public Shape(SingletonCounter count,int size) 
+	{
+		this.count= count;
+		this.size = size;
+	}
+
+	public SingletonCounter  getCount() { return count;}
+	public int getSize() {return size;}
+}
