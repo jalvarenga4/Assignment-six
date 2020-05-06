@@ -1,0 +1,14 @@
+
+public class Square extends Shape{
+
+	public Square(SingletonCounter c, int size) 
+	{
+		super(c,size);
+	}
+	
+	@Override 
+	public void display() 
+	{
+		System.out.println("Square: Count = "+ this.getCount() + "Side = " +this.getSize());
+	}
+}
