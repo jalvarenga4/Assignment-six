@@ -1,0 +1,14 @@
+
+public class Circle extends Shape {
+ 
+	public Circle(SingletonCounter c, int size) 
+	{
+		super(c,size);
+	}
+	
+	@Override 
+	public void display() 
+	{
+		System.out.println("Circle: Count = "+ this.getCount() + "Radius = " +this.getSize());
+	}
+}
