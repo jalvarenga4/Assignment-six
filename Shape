@@ -1,15 +1,27 @@
+/*
+ * Assignment #6
+ * Matthew Caponi, 011161928
+ * Jaime Alvarenga, 025272154
+ */
+public class Shape extends  ShapeComponent {
 
-public abstract class Shape implements  ShapeComponent {
-
-	private SingletonCounter count;
+	private int count;
 	private int size;
 	
-	public Shape(SingletonCounter count,int size) 
+	public Shape(int count,int size) 
 	{
 		this.count= count;
 		this.size = size;
 	}
 
-	public SingletonCounter  getCount() { return count;}
+ 
+	
+
+	public int getCount() { return count;}
 	public int getSize() {return size;}
+
+
+
+
+	
 }
