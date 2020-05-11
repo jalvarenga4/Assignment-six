@@ -1,0 +1,12 @@
+/*
+ * Assignment #6
+ * Matthew Caponi, 011161928
+ * Jaime Alvarenga, 025272154
+ */
+public  class ShapeComponent {
+
+	String s;
+	public String display() {
+		return s; 
+	}
+}
