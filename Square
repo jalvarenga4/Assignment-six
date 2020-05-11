@@ -1,14 +1,18 @@
-
+/*
+ * Assignment #6
+ * Matthew Caponi, 011161928
+ * Jaime Alvarenga, 025272154
+ */
 public class Square extends Shape{
 
-	public Square(SingletonCounter c, int size) 
+	public Square(int c, int size) 
 	{
 		super(c,size);
 	}
 	
-	@Override 
-	public void display() 
+	@Override
+	public String display() 
 	{
-		System.out.println("Square: Count = "+ this.getCount() + "Side = " +this.getSize());
+		return "Square: Count = "+ this.getCount() + "Side = " +this.getSize();
 	}
 }
