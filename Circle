@@ -1,14 +1,18 @@
-
+/*
+ * Assignment #6
+ * Matthew Caponi, 011161928
+ * Jaime Alvarenga, 025272154
+ */
 public class Circle extends Shape {
  
-	public Circle(SingletonCounter c, int size) 
+	public Circle(int c, int size) 
 	{
 		super(c,size);
 	}
 	
-	@Override 
-	public void display() 
+	@Override
+	public String display() 
 	{
-		System.out.println("Circle: Count = "+ this.getCount() + "Radius = " +this.getSize());
+		return("Circle: Count = "+ this.getCount() + "Radius = " +this.getSize());
 	}
 }
