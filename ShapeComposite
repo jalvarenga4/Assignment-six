@@ -1,0 +1,27 @@
+/*
+ * Assignment #6
+ * Matthew Caponi, 011161928
+ * Jaime Alvarenga, 025272154
+ */
+import java.util.ArrayList;
+import java.util.List;
+public class ShapeComposite extends ShapeComponent {
+	List <ShapeComponent> arr = new ArrayList<ShapeComponent>();
+	
+	
+	void add(Shape s) {
+		arr.add(s);
+	}
+	
+	@Override 
+	public String display() {
+		String s ="";
+		s+= "\nCOMPOSITE START:\n";
+		for (ShapeComponent f : arr) {
+			s+= f.display() + "\n";
+		}
+		s+="COMPOSITE END";
+		return s;
+	}
+
+}
